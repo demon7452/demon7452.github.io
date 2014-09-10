@@ -35,15 +35,6 @@ a:visited {
   float: left;
 }
 
-#header p {  
-  float: left;
-  margin-top: 10px;
-  display: block;
-  background: url(/images/title.gif) no-repeat top left;
-  width: 405px;
-  height: 80px;
-  text-indent: -999em;
-}
 
 #menu {
   float: right;
