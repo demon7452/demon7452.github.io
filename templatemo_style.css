@@ -128,7 +128,11 @@ img { margin: 0; padding: 0; border: none }
 
 .box a { color: #FFFFFF; }
 
-.home_box1 { width: 260px; height: 150px }
+.home_box1 
+{ 
+	width: 260px; 
+	height: 150px;
+ }
 .home_box2 { width: 530px; height: 150px }
 
 .color1 { background: #b10075 }
