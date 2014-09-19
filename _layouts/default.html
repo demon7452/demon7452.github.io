@@ -7,6 +7,12 @@
 body
 {
 	background: -webkit-linear-gradient(left,#9CF,#9CC,#9C9,#9C6,#9C3,#990);
+	background-image:url(../images/background.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	/*如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
+	  可以通过 background-attachment 属性防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响；默认值是scroll*/
 }
 </style>
 </head>
@@ -18,10 +24,9 @@ body
 
 <!-- IE6,IE7不支持，其余浏览器均支持，Opera不能自动播放 -->
 <audio controls="controls" autoplay="autoplay" loop=infinite> 
-<source src="http://demon7452.github.io/audio/外婆桥.mp3" type="audio/mp3" /> 
+	<source src="http://demon7452.github.io/audio/外婆桥.mp3" type="audio/mp3" /> 
 </audio> 
 </p>
-
 	{{ content }}
 
 </body>
