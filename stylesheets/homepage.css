@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+	body
+{
+	margin: 0;/* 清除body中的留白*/
+	padding:0;
+	background-image:url(http://demon7452.github.io/images/background.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	/*如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
+	  可以通过 background-attachment 属性防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响；默认值是scroll*/
+}
+#container
+{
+	
+	width:100%;
+	height:100%;
+	margin:0 0;
+}
+#header
+{
+	clear:both;
+	margin:0;
+
+}
+#header .audio
+{
+	width:auto;
+	float:right;
+}
+
+#main
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	
+}
+#audio
+{
+	position:absolute;
+	float:left;
+	margin-left:0;
+	
+	width:23%;
+}
+#content
+{
+	
+	float:right;
+	width:77%;
+	
+}
+#footer
+{
+	padding-bottom:0;
+	clear:both;	
+}
+#footer footer p
+{
+	
+	font-family:Tahoma, Geneva, sans-serif;
+}
