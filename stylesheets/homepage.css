@@ -22,7 +22,14 @@
 {
 	clear:both;
 	margin:0;
-
+}
+#header p
+{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:oblique;
+	font-weight:200;
+	letter-spacing:18px;
+	font-size:46px;
 }
 #header .audio
 {
@@ -37,20 +44,12 @@
 	margin:0;
 	
 }
-#audio
-{
-	position:absolute;
-	float:left;
-	margin-left:0;
-	
-	width:23%;
-}
 #content
 {
-	
-	float:right;
-	width:77%;
-	
+	background:#9CC;
+	float:none;
+	width:90%;
+	margin:auto;
 }
 #footer
 {

@@ -38,14 +38,14 @@ p { padding: 0; margin: 0 0 15px 0 }
 	clear:left;
 }
 
-blockquote.testimonial_block { background: url(images/testimonial.png) left center no-repeat; padding-left: 40px }
+blockquote.testimonial_block { background: url(../images/testimonial.png) left center no-repeat; padding-left: 40px }
 cite { font-weight: bold; color:#fff; }
 cite a, cite a:link, cite a:visited  { font-size: 12px; text-decoration: none; font-style: normal }
 cite span { font-weight: 400; color: #ccc; }
 
 
 .list_bullet { margin: 0 0 10px 15px; padding: 0; list-style: none }
-.list_bullet li { color:#fff; margin: 0 0 7px 0; padding: 0 0 0 20px; background: url(images/templatemo_list.png) no-repeat scroll 0 6px  }
+.list_bullet li { color:#fff; margin: 0 0 7px 0; padding: 0 0 0 20px; background: url(../images/templatemo_list.png) no-repeat scroll 0 6px  }
 .list_bullet li a { color: #fff; font-weight: normal; text-decoration: none }
 .list_bullet li a:hover { color: #fff }
 
@@ -117,7 +117,7 @@ img { margin: 0; padding: 0; border: none }
 {
 	overflow:auto;
 }
-.section a.slider_nav_btn { position: absolute; top: 0; right:0; width: 40px; height: 40px; display: block; background-image: url(images/slider_nav_btn.png);  text-indent: -10000px }
+.section a.slider_nav_btn { position: absolute; top: 0; right:0; width: 40px; height: 40px; display: block; background-image: url(../images/slider_nav_btn.png);  text-indent: -10000px }
 .section a.home_btn { right: 40px; background-position: 80px 0 }
 .section a.previous_btn { right: 80px; background-position: 0 0 }
 .section a.next_btn { right: 0px; background-position: 40px 0 }
