@@ -46,7 +46,9 @@
 }
 #content
 {
-	background:#9CC;
+	background: -webkit-linear-gradient(left,#9CF,#9CC,#9C9,#9C6,#9C3,#990);
+	font-family:"宋体";
+	font-size:24px;
 	float:none;
 	width:90%;
 	margin:auto;
