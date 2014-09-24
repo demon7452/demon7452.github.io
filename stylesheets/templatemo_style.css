@@ -132,9 +132,29 @@ img { margin: 0; padding: 0; border: none }
 { 
 	width: 260px; 
 	height: 150px;
+	-webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
  }
-.home_box2 { width: 530px; height: 150px }
-
+ .home_box1:hover
+{
+	height: 200px;
+}
+.home_box2 
+{ 
+	width: 530px; 
+	height: 150px;
+	-webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
+	
+}
+.home_box2:hover
+{
+	height: 200px;
+}
 .color1 { background: #b10075 }
 .color2 { background: #252525 }
 .color3 { background: #a7b100 }
