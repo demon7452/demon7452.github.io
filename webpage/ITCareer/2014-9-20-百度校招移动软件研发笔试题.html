@@ -174,7 +174,7 @@ int StrToInt(constchar* str)
 最后值得一提的是，在C语言提供的库函数中，函数atoi能够把字符串转换整数。它的声明是int atoi(constchar 
 *str)。该函数就是用一个全局变量来标志输入是否合法的。</pre>
 <h4>2、判断一个单链表是否有环，若有，找出环的入口点。</h4>
-<a href="http://blog.csdn.net/xudacheng06/article/details/7706245">http://blog.csdn.net/xudacheng06/article/details/7706245</a>
+<p>答案链接：<a href="http://blog.csdn.net/xudacheng06/article/details/7706245" target="_blank">http://blog.csdn.net/xudacheng06/article/details/7706245</a></p>
 <pre>判断链表是否存在环，有如下几种解法：
 1. 遍历链表，将已经遍历过的节点放在一个hash表中，如果一个节点已经存在hash表中，说明有环。时间:O(n) 空间:O(n)
 2. 反转链表。 时间O(n)，空间O(1)，使用三个指针。（ref:  http://www.cppblog.com/tx7do/archive/2009/01/06/71280.html）
@@ -196,9 +196,10 @@ void reverse(node*& head)
     }  
     head->next = NULL;  
     head = pPrev;  
-p;}  
+	p;
+}  
     递归版：
-[cpp] view plaincopyprint?
+
 node* reverse( node* pNode, node*& head)  
 {  
     if ( (pNode == 0) || (pNode->next == 0) ) // 递归跳出条件  
@@ -212,7 +213,7 @@ node* reverse( node* pNode, node*& head)
     return pNode;// 返回当前节点  
 }  
       使用反转链表的方法, 每过一个节点就把该节点的指针反向。若存在环，反转next指针最终会走到链表头部。若没有环，反转next指针会破坏链表结构(使链表反向), 所以为还原链表，需要把链表再反向一次。 这种方法的空间复杂度是O(1), 实事上我们使用了3个额外指针;而时间复杂度是O(n), 我们最多2次遍历整个链表(当链表中没有环的时候)。下面给出一个实现，但最大的问题是：若存在环，则无法还原到链表的原状态。
-[cpp] view plaincopyprint?
+
 bool reverse(Node *head) {  
  Node *curr = head;  
  Node *next = head->next;  
