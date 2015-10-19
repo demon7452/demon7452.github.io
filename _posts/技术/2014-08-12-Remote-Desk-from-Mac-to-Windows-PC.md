@@ -2,7 +2,7 @@
 layout: post
 title: Mac远程桌面连接Windows
 category: 技术
-tags: Mac
+tags: acg2
 keywords: 
 description: 
 ---
