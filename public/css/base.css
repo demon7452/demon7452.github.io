@@ -6,7 +6,7 @@
 body, html {
   margin: 0px;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #303030;
 }
 .row {
@@ -82,7 +82,6 @@ body, html {
   overflow-y: auto;
   background-color: #fff;
   overflow-x: hidden;
-
   /*background-image: url(/public/img/bg_lines1.jpg);*/
 }
 .aside3-title {
