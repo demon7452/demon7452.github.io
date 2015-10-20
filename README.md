@@ -1,3 +1,7 @@
-button属性修改在bootstrap.css里面
-button显示修改在-include/footer.html和base.js里面
+demon7452.github.io
+===================
+#个人主页
+<h2><a href="http://demon7452.github.io/" class="button" target="_blank">请猛戳链接……</a></h2>
+
+<img src="/public/img/background.png"/>
 
