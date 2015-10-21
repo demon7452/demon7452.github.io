@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 致友人书
-category: ACG
-tags: acg2
+category: 动漫
+tags: ACG
 keywords: 
 description: 
 ---
