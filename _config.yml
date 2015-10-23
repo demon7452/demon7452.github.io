@@ -1,7 +1,17 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
-markdown: redcarpet
-
+markdown: Redcarpet
+highlighter: pygments
+redcarpet:
+  extensions: [ "fenced_code_blocks",
+                "hard_wrap",
+                "autolink",
+                "tables",
+                "strikethrough",
+                "with_toc_data",
+                "highlight",
+                "prettify",
+                "no_intra_emphasis"]
 # 作者信息
 author: 
   name: Demon Li

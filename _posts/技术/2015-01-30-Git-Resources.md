@@ -90,5 +90,8 @@ $ git push --tags                       #上传所有标签
 ###资料链接
 1. [Try Git](https://try.github.io/levels/1/challenges/1)
 
-
+First Header | Second Header
+:------------ | :-------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
