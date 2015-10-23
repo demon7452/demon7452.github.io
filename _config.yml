@@ -1,6 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
-markdown: Redcarpet
+markdown: redcarpet
 highlighter: pygments
 redcarpet:
   extensions: [ "fenced_code_blocks",

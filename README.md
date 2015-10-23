@@ -6,7 +6,3 @@ demon7452.github.io
 <img src="/public/img/background.png"/>
 
 :smiling_imp:
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
