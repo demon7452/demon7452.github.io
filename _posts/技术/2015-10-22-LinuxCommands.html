@@ -56,8 +56,12 @@ description:
     <h1 style="font-family: bold;font-size: 50px;">B</h1>
     <table border="1" width="100%" style="font-size: 20px; text-align: left;background-color: lightblue">
         <tr>
-            <td width="10%">a</td>
-            <td width="90%">dd</td>
+            <td width="10%">bc</td>
+            <td width="90%">
+				 Linux 有提供一支计算程序 bc 。你在指令列输入 bc 后，屏幕会显示出版本信息， 之后就迚入到等待指示的阶段。<br>
+				 运算符： + 加法 - 减法 * 乘法 / 除法 ^ 指数 % 余数；<br>
+				 bc 预设仅输出整数，如果要输出小数点下位数，那举就必须要执行 scale=number ，那个 number 就是小数点位数。例如： scale=3, 5/1000=0.005<br>
+			</td>
         </tr>
     </table>
     </div>
@@ -131,8 +135,10 @@ description:
     <h1 style="font-family: bold;font-size: 50px;">I</h1>
     <table border="1" width="100%" style="font-size: 20px; text-align: left;background-color: lightblue">
         <tr>
-            <td width="10%">a</td>
-            <td width="90%">dd</td>
+            <td width="10%">info</td>
+            <td width="90%">
+				info 不 man 的用途其实差不多，都是用来查询指令的用法戒者是档案的格式。但是与 man page 一口气输出一堆信息不同的是，info page 则是将文件数据拆成一个一个的段落；
+			</td>
         </tr>
     </table>
     </div>
@@ -171,8 +177,12 @@ description:
     <h1 style="font-family: bold;font-size: 50px;">M</h1>
     <table border="1" width="100%" style="font-size: 20px; text-align: left;background-color: lightblue">
         <tr>
-            <td width="10%">a</td>
-            <td width="90%">dd</td>
+            <td width="10%">man</td>
+            <td width="90%">
+			 man 是 manual(操作说明)的简写,etc:  man date<br>
+			 man -f man : -f 这个选项就可以取得更多于 man 相关的信息，等同于 whatis man;<br>
+			 man -k man : -k(keywords),通过关键词来查询命令，等同于 apropos man;<br>
+			</td>
         </tr>
     </table>
     </div>
