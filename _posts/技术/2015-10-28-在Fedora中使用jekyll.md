@@ -60,17 +60,35 @@ Fetching: ffi-1.9.10.gem (100%)
 Building native extensions.  This could take a while...
 ERROR:  Error installing jekyll:
 	ERROR: Failed to build gem native extension.
-
     /usr/bin/ruby -r ./siteconf20151028-8562-rmel60.rb extconf.rb
 mkmf.rb can't find header files for ruby at /usr/share/include/ruby.h
-
 extconf failed, exit code 1
-
 Gem files will remain installed in /usr/local/share/gems/gems/ffi-1.9.10 for inspection.
 Results logged to /usr/local/lib64/gems/ruby/ffi-1.9.10/gem_make.out
-#这个错误是因为ruby-devel没有安装，使用如下命令应该就能解决了。
+
+//这个错误是因为ruby-devel没有安装，使用如下命令应该就能解决了。
 $ sudo yum install ruby-devel
 ```
+##运行 jekyll server 时碰到的错误
+```
+#错误描述：
+Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file.
+#解决方法：
+$ gem help jekyll-paginate
+#错误描述：
+Yikes! It looks like you don't have redcarpet or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- redcarpet'
+#解决方法：
+$ gem install redcarpet
+#错误描述：
+Yikes! It looks like you don't have pygments or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- pygments'
+#解决方法：
+$ gem install pygments.rb
+#总结：
+#类似依赖不存在的话，https://rubygems.org/
+
+```
+
+
 ##参考文档
 1.<a href="https://rubygems.org/pages/download" target="_blank">RubyGems官方说明文档</a><br> 
 2.<a href="https://rubygems.org/gems/jekyll/versions/2.5.3" target="_blank">RubyGems jekyll</a><br>
