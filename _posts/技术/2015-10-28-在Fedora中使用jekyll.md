@@ -72,9 +72,9 @@ Results logged to /usr/local/lib64/gems/ruby/ffi-1.9.10/gem_make.out
 $ sudo yum install ruby-devel
 ```
 ##参考文档
-1.<a href="https://zookeeper.apache.org/doc/trunk/index.html" target="_blank">ZooKeeper官方说明文档</a><br> 
-2.<a href="http://blog.csdn.net/shatelang/article/details/7596007" target="_blank">ZooKeeper搭建系列集</a><br>
-3.<a href="http://www.wangyuxiong.com/archives/51712" target="_blank">ZooKeeper系列之一:Zookeeper伪集群环境搭建</a><br>
-4.<a href="http://leiningen.org/" target="_blank">Leiningen官网</a><br>
+1.<a href="https://rubygems.org/pages/download" target="_blank">RubyGems官方说明文档</a><br> 
+2.<a href="https://rubygems.org/gems/jekyll/versions/2.5.3" target="_blank">RubyGems jekyll</a><br>
+3.<a href="http://jekyll.bootcss.com/" target="_blank">jekyll 官方说明文档</a><br>
+
 
 
