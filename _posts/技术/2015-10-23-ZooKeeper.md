@@ -6,11 +6,40 @@ tags:
 keywords: 
 description: 
 ---
+##zk-web的安装
+###zk-web说明
+zk-web is a Web UI of Zookeeper, just making it easier to use.<br>
+zk-web是一个Zookeeper的网页图形管理工具，是为了让Zookeeper更易使用。<br> 
+Sometimes I really get tired of the command line.zk-web is written in clojure with noir and boostrap.<br>
+Currently there're just less than 450 lines clojure code at all. Clojure is really so simple and so elegent!
+###安装
+```
+git clone git://github.com/qiuxiafei/zk-web.git
+cd zk-web
+#运行zk-web需要安装Leiningen <a href="http://leiningen.org/" target="_blank">Leiningen官网</a><br>
+#安装方法：
+#方法一：按照官网方法安装
+#方法二：将 lein script 保存为一个lein.sh文件，并将其放入zk-web文件夹中，通过 ./lein.sh run 即可以启动zk-web 
+```
+###配置说明
+```
+#zk-web is also easy to configurate. It reads $HOME/.zk-web-conf.clj or conf/zk-web-conf.clj when it starts up. As you‘ve already seen, the configuration file is also clojure code. Let's see an example:
+
+{
+ :server-port 8989  ;; optional, 8080 by default
+ :users {
+         "admin" "hello"
+         ;; map of user -> password
+         ;; you can add more
+         }
+ :default-node "localhost:2181/my-start-node" ;; optional
+ }
+```
 
 ##参考文档
 1.<a href="https://zookeeper.apache.org/doc/trunk/index.html" target="_blank">ZooKeeper官方说明文档</a><br> 
 2.<a href="http://blog.csdn.net/shatelang/article/details/7596007" target="_blank">ZooKeeper搭建系列集</a><br>
 3.<a href="http://www.wangyuxiong.com/archives/51712" target="_blank">ZooKeeper系列之一:Zookeeper伪集群环境搭建</a><br>
-
+4.<a href="http://leiningen.org/" target="_blank">Leiningen官网</a><br>
 
 
