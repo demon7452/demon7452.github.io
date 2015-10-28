@@ -74,7 +74,7 @@ $ sudo yum install ruby-devel
 #错误描述：
 Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file.
 #解决方法：
-$ gem help jekyll-paginate
+$ gem install jekyll-paginate
 #错误描述：
 Yikes! It looks like you don't have redcarpet or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- redcarpet'
 #解决方法：
@@ -84,11 +84,25 @@ Yikes! It looks like you don't have pygments or one of its dependencies installe
 #解决方法：
 $ gem install pygments.rb
 #总结：
-#类似依赖不存在的话，https://rubygems.org/
+#类似依赖不存在的话，https://rubygems.org/ 查找的该依赖，然后下载安装。
 
 ```
+##关于在windows中使用jekyll的说明
+在Windows中安装jekyll可以参考文档<a href="http://blog.csdn.net/itmyhome1990/article/details/41982625" target="_blank">Windows上安装Jekyll</a><br> 
+在运行 jekyll server 时我碰到的问题
+```
+  Conversion error: Jekyll::Converters::Markdown encountered an error while conv
+erting '_posts/技术/2014-09-12-Linux-Problems.md':
+                    Failed to get header.
+```
+出现该问题的原因是：在windows中jekyll使用的python版本不对，安装的 python 必须是2.7版本。<br>
+详细的说明可以参见<a href="https://teamtreehouse.com/community/error-running-jekyll-serve-liquid-exception-failed-to-get-header" target="_blank">Failed to get header."</a><br> 
+部分原文：<br>
+This error seems to be caused because of a component of jekyll that uses Python, not Ruby, and only works with Python 2.7 but not versions 3.+. See https://github.com/jekyll/jekyll/issues/1181&#13;
 
+Python 2.7 is pre-installed by default on Linux and Mac OS X but not Windows. Go to https://www.python.org/downloads/ and download the latest 2.7 version (not 3+) and install making sure the Add to PATH option is selected.
 
+This fixed the issue for me.
 ##参考文档
 1.<a href="https://rubygems.org/pages/download" target="_blank">RubyGems官方说明文档</a><br> 
 2.<a href="https://rubygems.org/gems/jekyll/versions/2.5.3" target="_blank">RubyGems jekyll</a><br>
