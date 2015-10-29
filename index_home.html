@@ -1,0 +1,41 @@
+---
+layout: page_title
+title: <i class="fa fa-home fa-lg"></i>
+titlename: 首页
+---
+<!--<br>--> 
+<marquee scrollamount="3">
+<center><h3><font color="#000080">芝</font><font color="#FFA500">兰</font><font color="#2E8B57">生</font><font color="#F08080">于</font><font color="#00CED1">幽</font><font color="red">谷</font><font color="#00c380">，</font><font color="#BA55D3">不</font><font color="#601986">以</font><font color="#556fb5">无</font><font color="#fa1089">人</font><font color="#638c0b">而</font><font color="#e00089">不</font><font color="#0a1089">芳</font><font color="#f0c089">。</font>
+<font color="#000080">君</font><font color="#FFA500">子</font><font color="#2E8B57">修</font><font color="#F08080">道</font><font color="#00CED1">立</font><font color="red">德</font><font color="#00c380">，</font><font color="#BA55D3">不</font><font color="#601986">为</font><font color="#556fb5">困</font><font color="#fa1089">穷</font><font color="#638c0b">而</font><font color="#e00089">改</font><font color="#0a1089">节</font><font color="#f0c089">。</font></h3></center>
+</marquee>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">{{ site.locals.newest }}</div>
+      {% for post in paginator.posts %}
+        <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
+          {{post.title}}
+          <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% for cate in site.cates %}
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{ cate }}</div>
+        {% for tag in site.tags %} 
+          {% if tag[0] == cate %}
+            {% for post in tag[1] %}
+              <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
+                {{post.title}}
+                <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
+              </a>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+ 
