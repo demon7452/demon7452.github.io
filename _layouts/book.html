@@ -16,13 +16,13 @@ layout: base
       {% for book in page.books %}
         <div class="col-md-12">
           <div class="panel panel-primary">
-            <div class="panel-heading">{{ book.title }}</div>
+            <div class="panel-heading" style="font-size: 28px">{{ book.title }}</div>
             <div class="panel-body">
               <div class="row">
                 <div class="col-md-4 col-xs-12 center">
                   <img src="{{ book.cover }}" alt="cover" class="img-thumbnail">
                 </div>
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-8 col-xs-12" style="font-size: 18px">
                   <table class="table table-bordered">
                     <tbody>
                       <tr><td style="width:80px;">作者</td><td>{{ book.author }}</td></tr>
@@ -30,7 +30,7 @@ layout: base
                       <tr><td>语言</td><td>{{ book.language }}</td></tr>
                       <tr>
                         <td>链接</td><td>
-                        <a href="{{ book.link }}" title="{{ book.link }}">图书链接</a>
+                        <a href="{{ book.link }}" target="_blank" title="{{ book.title }}">阅读地址</a>
                       </td></tr>
                       <tr>
                         <td>状态</td>
@@ -43,7 +43,7 @@ layout: base
                             <span class="label label-default">{{ book.status }}</span>
                           {% endif %}
                         </td></tr>
-                      <tr><td>评论</td><td>{{ book.description }}</td></tr>
+                      <tr><td>描述</td><td style="font-size: 15px;">{{ book.description }}</td></tr>
                     </tbody>
                   </table>
                 </div>
