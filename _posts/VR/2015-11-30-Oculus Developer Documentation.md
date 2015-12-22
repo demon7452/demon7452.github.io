@@ -10,7 +10,9 @@ description:
 ###关于本书
 有志于学习VR开发，故对Oculus官方开发者说明文档进行翻译；<br>
 希望在翻译的过程中，可以收获更多，学习更多。<br>
-初次翻译，有错之处，欢迎大家指正。希望能与志同道合的朋友们共同进步！！
+初次翻译，有错之处，欢迎大家指正。希望能与志同道合的朋友们共同进步！！<br>
+我建了个VR群，欢迎大家加入。<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f9ccc777d88992466dd49d1380d7c23a189e8c528db1a99631f9ec524c7a82a7"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="上海--VR" title="上海--VR"></a><br>
+![1](/public/img/QRCode.png)
 ![1](/public/img/OculusDeveloperDocumentation.jpg)
 
 ##参考文档
