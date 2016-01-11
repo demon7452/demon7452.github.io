@@ -13,14 +13,12 @@ description:
 <h4>解压缩</h4>
 <pre>
 Gradle 发布的版本为 ****ZIP 格式. 所有文件包含:
-<ul>
-<li>Gradle 的二进制文件.</li>
-<li>用户指南 (HTML 和 PDF).</li>
-<li>DSL参考指南.></li>
-<li>API文档 (Javadoc和 Groovydoc).</li>
-<li>扩展的例子,包括用户指南中引用的实例，以及一些更复杂的实例来帮助用户构建自己的build.</li>
-<li>二进制源码.此代码仅供参考.</li>
-</ul>
+	**Gradle 的二进制文件.
+	**用户指南 (HTML 和 PDF).
+	**DSL参考指南.
+	**API文档 (Javadoc和 Groovydoc).
+	**扩展的例子,包括用户指南中引用的实例，以及一些更复杂的实例来帮助用户构建自己的build.
+	**二进制源码.此代码仅供参考.
 </pre>
 <h4>设置环境变量</h4>
 <pre>
@@ -35,6 +33,7 @@ Gradle 发布的版本为 ****ZIP 格式. 所有文件包含:
 如果正确安装，会输出Gradle版本信息以及本地的配置环境  ( groovy 和 JVM 版本等). 显示的版本信息应该与您所下载的 gradle 版本信息相匹配.
 </pre>
 <h2>二、Java项目的构建</h2>
+详情请参阅<a href="https://docs.gradle.org/current/userguide/tutorial_java_projects.html" target="_blank">Java Quickstart</a><br>
 提前说明：grale构建java项目时，有一些默认的项目布局：
 <table border="1" width="60%" style="font-size: 18px; text-align: left">
 	<tr>
@@ -57,8 +56,115 @@ Gradle 发布的版本为 ****ZIP 格式. 所有文件包含:
 		<td>src/test/resources</td>
 		<td>测试时所需的资源文件目录</td>
 	</tr>
+		<tr>
+		<td>src/main/webapp</td>
+		<td>Web应用源文件目录</td>
+	</tr>
 </table>
+<h3>1、添加build.gradle文件</h3>
+在项目根目录下添加build.gradle文件,例如在demo项目如下所示：
+<pre>
+	-demo
+	  -src
+	    -main
+		  -java
+		  -resources
+	    -test
+		  -java
+		  -resources
+	  -build.gradle
+</pre>
+<h3>2、在build.gradle中进行配置</h3>
+<pre>
+	apply plugin: 'java' #添加java plugin，表示要构建一个java项目
+	
+	#添加一些配置来定义第三方库的来源
+	repositories {
+		mavenCentral() #<a href="http://mvnrepository.com" target="_blank">maven中央库</a>,项目所需的API会从上面下载
+		#也可以自定义API的下载地址
+		maven { url 'http://192.168.1.7:8081/nexus/content/groups/public' }
+	}
+	
+	#添加项目所需要的API
+	dependencies {
+		compile "joda-time:joda-time:2.2" #可以从<a href="http://mvnrepository.com" target="_blank">maven中央库</a>查找
+	}
+</pre>
+<h3>3、构建</h3>
+在项目根目录下运行 gradle build命令
+<pre>
+$ gradle build
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:jar
+:assemble
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:check UP-TO-DATE
+:build
+
+BUILD SUCCESSFUL  #打印信息，表示构建成功。
+
+Total time: 4.714 secs
+</pre>
+<h2>三、其他项目的构建</h2>
+<h3>1、构建Eclipse项目</h3>
+详情请参阅<a href="https://docs.gradle.org/current/userguide/eclipse_plugin.html" target="_blank">The Eclipse Plugins</a><br>
+构建一般的eclipse项目，只要在build.gradle文件中添加 eclipse plugin就可以了
+<pre>
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+</pre>
+然后在项目根目录下执行 gradle cleanEclipse elipse
+<pre>
+#gradle cleanEclipse elipse 可以简写为gradle cE e ；其中cleanEclipse 表示 clean all Eclipse configuration file ；
+$ gradle cE e
+:cleanEclipseClasspath UP-TO-DATE
+:cleanEclipseJdt UP-TO-DATE
+:cleanEclipseProject UP-TO-DATE
+:cleanEclipse UP-TO-DATE
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:eclipse
+
+BUILD SUCCESSFUL
+
+Total time: 4.061 secs
+</pre>
+<h3>2、构建Eclipse Web项目</h3>
+构建一般的eclipse项目，只要在build.gradle文件中添加 'war' 'eclipse-wtp' plugin
+<pre>
+	apply plugin: 'java'
+	apply plugin: 'eclipse-wtp'
+	apply plugin: 'war'
+</pre>
+同样的，在项目根目录下执行eclipse构建命令 gradle cleanEclipse elipse
+<pre>
+$ gradle cE e
+:cleanEclipseClasspath
+:cleanEclipseJdt
+:cleanEclipseProject
+:cleanEclipseWtpComponent UP-TO-DATE
+:cleanEclipseWtpFacet UP-TO-DATE
+:cleanEclipseWtp UP-TO-DATE
+:cleanEclipse
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:eclipseWtpComponent
+:eclipseWtpFacet
+:eclipseWtp
+:eclipse
+
+BUILD SUCCESSFUL
+
+Total time: 3.915 secs
+</pre>
 <h2>参考文档</h2>
-1.<a href="https://developer.valvesoftware.com/wiki/Steam_under_Linux" target="_blank">Steam under Linux</a><br> 
-2.<a href="http://negativo17.org/steam/" target="_blank">Moving the Steam client installation</a><br>
+1.<a href="http://www.importnew.com/15881.html" target="_blank">使用Gradle构建Java项目</a><br> 
+2.<a href="https://docs.gradle.org/current/userguide/userguide.html" target="_blank">Gradle User Guide</a><br>
 3.<a href="http://askubuntu.com/questions/256628/steam-fatal-error-steam-needs-to-be-online-to-update-but-was-set-to-offline-mov" target="_blank">Steam fatal error steam needs to be online to update, but was set to offline movies</a><br>
