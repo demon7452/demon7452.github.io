@@ -164,6 +164,69 @@ BUILD SUCCESSFUL
 
 Total time: 3.915 secs
 </pre>
+
+<h2>四、Gradle Wrapper的使用</h2>
+Gradle Wrapper是开始一个Gradle构建的首选方式。它包含了windows批处理以及OS X和Linux的Shell脚本。这些脚本允许我们在没有安装Gradle的系统上执行Gradle构建。<br>
+要实现这个功能，我们需要在我们的build.gradle文件中增加以下代码：
+<pre>
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'   //设定Gradle 的版本号
+}
+
+#然后在项目根目录下执行 gradle tasks 命令就可以看到wrapper task 了
+$ gradle tasks
+:tasks
+------------------------------------------------------------
+Other tasks
+-----------
+wrapper
+
+To see all tasks and more detail, run with --all.
+
+BUILD SUCCESSFUL
+</pre>
+在项目根目录下执行执行 gradle wrapper 来下载和初始化wrapper脚本:
+<pre>
+$ gradle wrapper
+:wrapper
+
+BUILD SUCCESSFUL
+
+Total time: 2.085 secs
+#命令执行完后，我们可以看到增加了一些新文件:
+└── 根目录
+    └── gradlew
+    └── gradlew.bat
+    └── gradle
+        └── wrapper
+            └── gradle-wrapper.jar
+            └── gradle-wrapper.properties
+</pre>
+现在Gradle Wrapper已经可以用来构建系统了，在项目根目录下执行如下构建命令：
+<pre>
+#和我们使用 gradle 构建时的命令相同， 使用 ./gradlew 替换 gradle 即可；
+$ ./gradlew --version
+
+------------------------------------------------------------
+Gradle 2.3
+------------------------------------------------------------
+
+Build time:   2015-02-16 05:09:33 UTC
+Build number: none
+Revision:     586be72bf6e3df1ee7676d1f2a3afd9157341274
+
+Groovy:       2.3.9
+Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+JVM:          1.7.0_80 (Oracle Corporation 24.80-b11)
+OS:           Linux 4.2.3-200.fc22.x86_64 amd64
+
+#使用 ./gradlew build 构建项目
+$ ./gradlew build
+
+........
+
+BUILD SUCCESSFUL
+</pre>
 <h2>参考文档</h2>
 1.<a href="http://www.importnew.com/15881.html" target="_blank">使用Gradle构建Java项目</a><br> 
 2.<a href="https://docs.gradle.org/current/userguide/userguide.html" target="_blank">Gradle User Guide</a><br>
