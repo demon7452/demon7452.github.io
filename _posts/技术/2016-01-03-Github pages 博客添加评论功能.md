@@ -2,7 +2,7 @@
 layout: post
 title: Github pages 博客添加评论功能
 category: 技术
-tags: github博客
+tags: git
 keywords: 
 description: 
 ---
