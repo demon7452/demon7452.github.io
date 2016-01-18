@@ -6,62 +6,41 @@ tags: git
 keywords: 
 description: 
 ---
-##git学习总结
-###一、git安装
-git在Windows、Linux、Mac中的安装方法请参阅<a target="_blank" href="http://www.worldhello.net/">[Git权威指南]</a>,在这里就不一一赘述了；<br>
-如果是在Windows中使用的话，可以使用Github for windows客户端。个人感觉还是比较好用的，值得一试；<br>
+##Github pages 博客添加分享功能
+使用百度分享为博客添加分享功能将十分简单，只需在页面中添加一段script即可，如下所示：
+<pre>
+	script
+		window._bd_share_config={
+			"common":{
+				"bdSnsKey":{},
+				"bdText":"",
+				"bdMini":"1",
+				"bdMiniList":["qzone","weixin","sqq","tsina","douban","fbook","twi","tieba","linkedin","youdao","print"],
+				"bdPic":"",
+				"bdStyle":"0",
+				"bdSize":"16"
+			},
+			"slide":{
+				"type":"slide",
+				"bdImg":"4",
+				"bdPos":"right",
+				"bdTop":"65.5"
+			},
+			"image":{
+				"viewList":["qzone","sqq","tsina","weixin"],
+				"viewText":"分享到：",
+				"viewSize":"16"
+			}
+		};
+		with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+	/script
+</pre>
 
-```
-#git安装好后可以运行如下命令来查看git版本
-$ git --version
-git version 2.5.3.windows.1
-```
-###二、git config -- git配置
-在开始使用git之前，需要设置一下git的配置变量，主要是配置提交者的email和name;<br>
-git配置变量主要分为三个级别：版本库级、当前用户级、系统级（面向所有用户）；<br>
-三者的优先级顺序为：版本库-->用户-->系统；<br>
 
-```
-#配置版本库级变量，需要在版本库目录下执行如下命令；
-#该配置文件位于版本库目录下的 .git 目录中  .git/config
-$ git config user.email "XXXX@XX.com"  //配置邮箱
-$ git config user.name "XXX"  //配置用户名
-
-#配置当前用户的git变量，执行以命令即可：
-#该配置文件位于用户主目录下的 .gitconfig 文件中，linux中可以使用 cat ~/.gitconfig 查看
-$ git config --global user.email "XXXX@XX.com"  //配置邮箱
-$ git config --global user.name "XXX"  //配置用户名
-
-#配置系统级的git变量，执行以命令即可：
-#该配置文件位于 /etc/gitconfig 文件中;
-$ git config --system user.email "XXXX@XX.com"  //配置邮箱
-$ git config --system user.name "XXX"  //配置用户名
-```
-
-###三、git init -- 初始化版本库
-主要是使用git init 创建版本库，使用方法如下：
-
-```
-#创建一个目录，进入该目录下初始化版本库
-$ mkdir demo
-$ cd demo
-$ git init
-初始化空的 Git 版本库于 /cygdrive/f/github/gittest/demo/.git/
-
-#直接创建
-$ git init demo
-初始化空的 Git 版本库
-```
-
-###四、git clone -- 克隆版本库
-
-```
-#问题描述 ：Steam fatal error steam needs to be online to update, but was set to offline movies
-#我直接运行如下命令就可以了
-$ steam --reset
-```
-
+进入到<a href="http://share.baidu.com/code" target="_blank">百度分享</a>页面中，<br>
+简单的话可以使用**自由选择版**，按照提示一步步定制，最后获得script代码；<br>
+**Tips:**建议不要选择**划词分享功能**功能，不怎么好用。<br>
+也可以选择**专业开发版**，可以自由定制。<br>
 ##参考文档
-1.<a href="https://developer.valvesoftware.com/wiki/Steam_under_Linux" target="_blank">Steam under Linux</a><br> 
-2.<a href="http://negativo17.org/steam/" target="_blank">Moving the Steam client installation</a><br>
-3.<a href="http://askubuntu.com/questions/256628/steam-fatal-error-steam-needs-to-be-online-to-update-but-was-set-to-offline-mov" target="_blank">Steam fatal error steam needs to be online to update, but was set to offline movies</a><br>
+1.<a href="http://share.baidu.com/code" target="_blank">百度分享</a><br> 
+2.<a href="http://www.smslit.top/jekyll/2015/07/19/jekyllShare.html#no1" target="_blank">Jekyll博客添加分享功能</a><br>
