@@ -4,64 +4,66 @@ title: Github pages 博客添加评论功能
 category: 技术
 tags: git
 keywords: 
-description: 
+description: Github pages 博客添加评论功能
 ---
-##git学习总结
-###一、git安装
-git在Windows、Linux、Mac中的安装方法请参阅<a target="_blank" href="http://www.worldhello.net/">[Git权威指南]</a>,在这里就不一一赘述了；<br>
-如果是在Windows中使用的话，可以使用Github for windows客户端。个人感觉还是比较好用的，值得一试；<br>
+##Github pages 博客添加评论功能
+由于被墙的原因，所以国内一般推荐使用类似 DISQUS 的 ”多说“ 评论插件
+###注册多说用户
+在使用多说评论插件之前，需要先前往<a href="http://duoshuo.com/" target="_blank">多说官网</a>注册一个帐号，<br>
+将自己的博客网站与多说帐号绑定，并获得一个短域名（short_name）。
+###添加评论框的标签
 
 ```
-#git安装好后可以运行如下命令来查看git版本
-$ git --version
-git version 2.5.3.windows.1
-```
-###二、git config -- git配置
-在开始使用git之前，需要设置一下git的配置变量，主要是配置提交者的email和name;<br>
-git配置变量主要分为三个级别：版本库级、当前用户级、系统级（面向所有用户）；<br>
-三者的优先级顺序为：版本库-->用户-->系统；<br>
-
-```
-#配置版本库级变量，需要在版本库目录下执行如下命令；
-#该配置文件位于版本库目录下的 .git 目录中  .git/config
-$ git config user.email "XXXX@XX.com"  //配置邮箱
-$ git config user.name "XXX"  //配置用户名
-
-#配置当前用户的git变量，执行以命令即可：
-#该配置文件位于用户主目录下的 .gitconfig 文件中，linux中可以使用 cat ~/.gitconfig 查看
-$ git config --global user.email "XXXX@XX.com"  //配置邮箱
-$ git config --global user.name "XXX"  //配置用户名
-
-#配置系统级的git变量，执行以命令即可：
-#该配置文件位于 /etc/gitconfig 文件中;
-$ git config --system user.email "XXXX@XX.com"  //配置邮箱
-$ git config --system user.name "XXX"  //配置用户名
+ <div class="ds-thread" data-thread-key="文章在原站点中的id或其他唯一标识" data-title="您的文章标题" ></div>
+ #例如：
+ <div class="ds-thread" data-thread-key="{{ page.title }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
 ```
 
-###三、git init -- 初始化版本库
-主要是使用git init 创建版本库，使用方法如下：
+###添加多说的js
 
 ```
-#创建一个目录，进入该目录下初始化版本库
-$ mkdir demo
-$ cd demo
-$ git init
-初始化空的 Git 版本库于 /cygdrive/f/github/gittest/demo/.git/
-
-#直接创建
-$ git init demo
-初始化空的 Git 版本库
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:"填写你的短域名"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = false;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
 ```
 
-###四、git clone -- 克隆版本库
+###自己修改评论框样式（可选）
+添加css样式，将评论头像修改为圆形，并添加旋转效果。
 
 ```
-#问题描述 ：Steam fatal error steam needs to be online to update, but was set to offline movies
-#我直接运行如下命令就可以了
-$ steam --reset
+#ds-reset .ds-avatar img {
+  width: 54px !important;
+  height: 54px !important;
+  -webkit-border-radius: 27px !important;
+  -moz-border-radius: 27px !important;
+  border-radius: 27px !important;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+#ds-reset .ds-avatar img:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+#ds-reset .ds-powered-by {
+  display: none;
+}
 ```
+
+
 
 ##参考文档
-1.<a href="https://developer.valvesoftware.com/wiki/Steam_under_Linux" target="_blank">Steam under Linux</a><br> 
-2.<a href="http://negativo17.org/steam/" target="_blank">Moving the Steam client installation</a><br>
-3.<a href="http://askubuntu.com/questions/256628/steam-fatal-error-steam-needs-to-be-online-to-update-but-was-set-to-offline-mov" target="_blank">Steam fatal error steam needs to be online to update, but was set to offline movies</a><br>
+1.<a href="http://duoshuo.com/" target="_blank">多说官网</a><br> 
+2.<a href="https://disqus.com/profile/login/" target="_blank">DISQUS官网</a><br>
+3.<a href="http://havee.me/internet/2013-07/add-duoshuo-commemt-system-into-jekyll.html" target="_blank">为 Jekyll 添加多说评论系统</a><br>
