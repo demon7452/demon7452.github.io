@@ -2,7 +2,7 @@ permalink: /:year/:month/:day/:title.html
 gems: [jekyll-paginate]
 paginate: 10
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 redcarpet:
   extensions: [ "fenced_code_blocks",
                 "hard_wrap",
