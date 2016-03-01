@@ -6,7 +6,8 @@ tags:
 keywords: ZooKeeper学习总结
 description: ZooKeeper学习总结
 ---
-# ZooKeeper 学习总结
+
+#ZooKeeper 学习总结
 ####*参阅书籍：<<实战Hadoop--开启通向云计算的捷径>>*
 
 ##ZooKeeper 定义
