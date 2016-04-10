@@ -3,7 +3,7 @@ layout: book
 title: The Singularity is Near
 category: 书香
 tags: 
-keywords: 
+keywords: TheSingularityIsNear.jpg
 books: 
     - title: 奇点临近
       status: 已读
