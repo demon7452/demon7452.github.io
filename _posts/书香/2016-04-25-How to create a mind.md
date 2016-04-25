@@ -8,7 +8,7 @@ books:
     - title: 如何创造思维
       status: 在读
       author: Ray Kurzweil
-      publisher: 机械工业出版社
+      publisher: 浙江人民出版社
       language: 中文
       link: 
       cover: /public/img/BookCovers/HowToCreateAMind.jpg
