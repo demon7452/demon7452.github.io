@@ -6,6 +6,7 @@ tags: git
 keywords: 
 description: 
 ---
+
 ## Github pages 博客添加分享功能
 使用百度分享为博客添加分享功能将十分简单，只需在页面中添加一段script即可，如下所示：
 <pre>
