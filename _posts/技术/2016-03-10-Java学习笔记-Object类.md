@@ -8,6 +8,7 @@ description: Java学习笔记-Object类
 ---
 # Java学习笔记-Object类
 *Note：参阅书籍《Core Java，Volume I：Fundamentals》*
+
 ## Object类的说明
 - Object类是Java中所有类的最终祖先，在Java中每个类都是由它扩展而来；
 - 如果没有明确的指出超类，Object就被认为是这个类的超类。class A extends Object是不必要的；
