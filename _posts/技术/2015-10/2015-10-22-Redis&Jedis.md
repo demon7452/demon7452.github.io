@@ -38,26 +38,26 @@ Redis的配置文件是：redis.conf
 
 ### 常用配置项为: 
 **daemonize:** 是否以后台进程运行，默认为no <br>
-**pidfile /var/run/redis.pid: **pid文件路径 </br>
-**port 6379:** 监听端口 </br>
-**bind 127.0.0.1:**绑定主机ip</br> 
-**unixsocket /tmp/redis.sock：**sock文件路径 </br>
-<font color=red>timeout 300：</font>超时时间，默认是300s </br>
-<font color=red>loglevel verbose：</font>日志等级，可选项有debug:大量的信息，开发和测试有用；verbose：很多极其有用的信息，但是不像debug那么乱；notice：在生产环境中你想用的信息；warning：最关键、最重要的信息才打印。 默认是erbose </br>
-<font color=red>logfile stdout：</font>日志记录方式，默认是stdout </br>
-<font color=red>syslog-enabled no：</font>日志记录到系统日志中，默认是no </br>
-<font color=red>syslog-ident redis：</font>指定系统日志标识 </br>
-<font color=red>syslog-facility local0：</font>指定系统日志设备，必须是USER或者 LOCAL0~LOCAL7。 默认是local0 </br>
-<font color=red>databases 16：</font>数据库的数量，默认的数据库是DB 0，你可以使用 SELECT 来选择不同的数据库。dbid的范围是0~(你设置的值-1)</br>
-<font color=red>save \<seconds\> \<changes\>：</font>RDB在多长时间内，有多少次更新操作，就将数据同步到数据文件。 </br>
-<font color=red>save 900 1：</font>15min内至少1个key被改变 </br>
-<font color=red>save 300 10：</font>5min内至少有300个key被改变 </br>
-<font color=red>save 60 10000：</font>60s内至少有10000个key被改变 </br>
-<font color=red>rdbcompression yes：</font>存储至本地数据库时是否压缩数据，默认是yes </br>
-<font color=red>dbfilename dump.rdb：</font>本地数据库文件名，默认是dump.rdb </br>
-<font color=red>dir ./：</font>本地数据库存放路径，默认是./ </br>
-<font color=red>slaveof <masterip> <masterport>：</font>当本机为从服务时，设置主服务的ip以及端口 </br>
-<font color=red>masterauth <master-password>：</font>主服务的连接密码</br>
+**pidfile /var/run/redis.pid: **pid文件路径 <br>
+**port 6379:** 监听端口 <br>
+**bind 127.0.0.1:**绑定主机ip<br> 
+**unixsocket /tmp/redis.sock：**sock文件路径 <br>
+**timeout 300：**超时时间，默认是300s <br>
+**loglevel verbose：**日志等级，可选项有debug:大量的信息，开发和测试有用；verbose：很多极其有用的信息，但是不像debug那么乱；notice：在生产环境中你想用的信息；warning：最关键、最重要的信息才打印。 默认是erbose <br>
+**logfile stdout：**日志记录方式，默认是stdout <br>
+**syslog-enabled no：**日志记录到系统日志中，默认是no <br>
+**syslog-ident redis：**指定系统日志标识 <br>
+**syslog-facility local0：**指定系统日志设备，必须是USER或者 LOCAL0~LOCAL7。 默认是local0 <br>
+**databases 16：**数据库的数量，默认的数据库是DB 0，你可以使用 SELECT 来选择不同的数据库。dbid的范围是0~(你设置的值-1)<br>
+**save \<seconds\> \<changes\>：**RDB在多长时间内，有多少次更新操作，就将数据同步到数据文件。 <br>
+**save 900 1：**15min内至少1个key被改变 <br>
+**save 300 10：**5min内至少有300个key被改变 <br>
+**save 60 10000：**60s内至少有10000个key被改变 <br>
+**rdbcompression yes：**存储至本地数据库时是否压缩数据，默认是yes <br>
+**dbfilename dump.rdb：**本地数据库文件名，默认是dump.rdb <br>
+**dir ./：**本地数据库存放路径，默认是./ <br>
+**slaveof <masterip> <masterport>：**当本机为从服务时，设置主服务的ip以及端口 <br>
+**masterauth <master-password>：**主服务的连接密码<br>
 
 ### 启动服务器
 ```
@@ -293,7 +293,7 @@ Enjoy!
 ```
 
 ### 资料链接
-1.<a href="http://redis.io/download" target="_blank">[Redis]</a></br> 
+1.<a href="http://redis.io/download" target="_blank">[Redis]</a><br> 
 
 2.<a href="http://my.oschina.net/gccr/blog/307725" target="_blank">[Redis服务器搭建/配置/及Jedis客户端的使用方法]</a>
 
