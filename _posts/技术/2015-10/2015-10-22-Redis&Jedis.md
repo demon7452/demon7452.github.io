@@ -288,6 +288,7 @@ Enjoy!
 
 ### 资料链接
 1.<a href="http://redis.io/download" target="_blank">[Redis]</a></br> 
+
 2.<a href="http://my.oschina.net/gccr/blog/307725" target="_blank">[Redis服务器搭建/配置/及Jedis客户端的使用方法]</a>
 
 
