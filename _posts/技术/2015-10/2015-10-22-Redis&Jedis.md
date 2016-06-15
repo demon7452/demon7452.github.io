@@ -21,23 +21,23 @@ $ make
 
 编译完成后,src文件夹中会包括以下的一些可执行文件：  
 
-<font color=red>redis-server：</font>这个是redis的服务器 
+**redis-server：**这个是redis的服务器 
 
-<font color=red>redis-cli：</font>这个是redis的客户端   
+**redis-cli：**这个是redis的客户端   
 
-<font color=red>redis-check-aof：</font>这个是检查AOF文件的工具  
+**redis-check-aof：**这个是检查AOF文件的工具  
 
-<font color=red>redis-check-dump：</font>这个是本地数据检查工具 
+**redis-check-dump：**这个是本地数据检查工具 
 
-<font color=red>redis-benchmark：</font>性能基准测试工具，安装完后可以测试一下当前Redis的性能   
+**redis-benchmark：**性能基准测试工具，安装完后可以测试一下当前Redis的性能   
 
-<font color=red>redis-sentinel：</font>Redis监控工具，集群管理工具
+**redis-sentinel：**Redis监控工具，集群管理工具
 
 ### 配置文件
 Redis的配置文件是：redis.conf 
 
 ### 常用配置项为: 
-<font color=red>daemonize:</font> 是否以后台进程运行，默认为no </br>
+**daemonize:** 是否以后台进程运行，默认为no <br>
 <font color=red>pidfile /var/run/redis.pid: </font>pid文件路径 </br>
 <font color=red>port 6379:</font> 监听端口 </br>
 <font color=red>bind 127.0.0.1:</font>绑定主机ip</br> 
