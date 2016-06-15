@@ -6,8 +6,9 @@ tags: Linux
 keywords: 
 description: 
 ---
-##启动时出现Kernel driver not installed (rc=-1908)
-###Fedora环境下出现如下问题
+## 启动时出现Kernel driver not installed (rc=-1908)
+
+### Fedora环境下出现如下问题
 ```
 Kernel driver not installed (rc=-1908)
 
@@ -33,7 +34,8 @@ Trying to register the VirtualBox kernel modules using DKMS[  确定  ]
 Starting VirtualBox kernel modules                         [  确定  ]
 #ok,解决问题。蛋疼。
 ```
-##参考文档
+
+## 参考文档
 1.<a href="https://www.virtualbox.org/manual/UserManual.html" target="_blank">VirtualBox官方文档</a><br> 
 
 
