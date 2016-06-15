@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ZooKeeper
+title: zk-web的安装
 category: 技术
 tags: 
 keywords: 
