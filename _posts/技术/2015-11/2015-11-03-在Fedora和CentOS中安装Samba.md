@@ -162,6 +162,7 @@ $ chkconfig smb on
 #检查开启情况
 $ chkconfig --list smb
 ```
+
 ## 访问 Samba
 在Fedora中可以 smb://<samba-server-IP-address> 连接共享文件夹  
 在windows中可以在‘运行’中输入 \\<samba-server-IP-address> 连接共享文件夹
