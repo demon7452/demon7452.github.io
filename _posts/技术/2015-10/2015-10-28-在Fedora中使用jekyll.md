@@ -6,7 +6,7 @@ tags: Linux
 keywords: 
 description: 
 ---
-##安装ruby，RubyGems 和 jekyll
+## 安装ruby，RubyGems 和 jekyll
 ```
 #使用yum安装，这一般不会碰到问题
 $ sudo yum install ruby
@@ -37,8 +37,10 @@ extconf failed, exit code 1
 Gem files will remain installed in /usr/local/share/gems/gems/ffi-1.9.10 for inspection.
 Results logged to /usr/local/lib64/gems/ruby/ffi-1.9.10/gem_make.out
 ```
-##问题解决：
-###问题一：Gem::RemoteFetcher::FetchError
+
+## 问题解决：
+
+### 问题一：Gem::RemoteFetcher::FetchError
 ```
 ERROR:  While executing gem ... (Gem::RemoteFetcher::FetchError)
     Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/specs.4.8.gz)
@@ -54,7 +56,8 @@ $ gem sources --add http://rubygems.org/
 $ gem sources --remove https://rubygems.org/
 #ok,问题应该解决了。
 ```
-###问题二：ERROR: Failed to build gem native extension.
+
+### 问题二：ERROR: Failed to build gem native extension.
 ```
 Fetching: ffi-1.9.10.gem (100%)
 Building native extensions.  This could take a while...
@@ -69,7 +72,8 @@ Results logged to /usr/local/lib64/gems/ruby/ffi-1.9.10/gem_make.out
 //这个错误是因为ruby-devel没有安装，使用如下命令应该就能解决了。
 $ sudo yum install ruby-devel
 ```
-##运行 jekyll server 时碰到的错误
+
+## 运行 jekyll server 时碰到的错误
 ```
 #错误描述：
 Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file.
@@ -87,10 +91,12 @@ $ gem install pygments.rb
 #类似依赖不存在的话，https://rubygems.org/ 查找的该依赖，然后下载安装。
 
 ```
-##关于在windows中使用jekyll的说明
+
+## 关于在windows中使用jekyll的说明
 在Windows中安装jekyll可以参考文档<a href="http://blog.csdn.net/itmyhome1990/article/details/41982625" target="_blank">Windows上安装Jekyll</a><br> 
 在运行 jekyll server 时我碰到的问题
-###问题一：
+
+### 问题一：
 
 ```
   Conversion error: Jekyll::Converters::Markdown encountered an error while conv
@@ -107,7 +113,7 @@ Python 2.7 is pre-installed by default on Linux and Mac OS X but not Windows. Go
 
 This fixed the issue for me.
 
-###问题二:
+### 问题二:
 
 ```
 jekyll 3.0.1 | Error:  Permission denied - bind(2) for 127.0.0.1:4000
@@ -115,7 +121,7 @@ jekyll 3.0.1 | Error:  Permission denied - bind(2) for 127.0.0.1:4000
 #解决方法：说明端口被占有，不知为何，打开_config.yml 在最后加入一行 port: 5001 (其他也可)问题解决。
 ```
 
-##参考文档
+## 参考文档
 1.<a href="https://rubygems.org/pages/download" target="_blank">RubyGems官方说明文档</a><br> 
 2.<a href="https://rubygems.org/gems/jekyll/versions/2.5.3" target="_blank">RubyGems jekyll</a><br>
 3.<a href="http://jekyll.bootcss.com/" target="_blank">jekyll 官方说明文档</a><br>
