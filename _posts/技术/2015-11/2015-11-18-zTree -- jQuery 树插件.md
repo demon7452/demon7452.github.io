@@ -6,10 +6,12 @@ tags: javascript
 keywords: 
 description: 
 ---
-#zTree -- jQuery 树插件
-##zTree 简介
+# zTree -- jQuery 树插件
+
+## zTree 简介
 zTree 是一个依靠 jQuery 实现的多功能 “树插件”。优异的性能、灵活的配置、多种功能的组合是 zTree 最大优点。
-##zTree的简单使用过程
+
+## zTree的简单使用过程
 1、首先是导入 zTree的相关js库和css
 
 ```
@@ -78,7 +80,8 @@ zTree 是一个依靠 jQuery 实现的多功能 “树插件”。优异的性�
 		$("#list").text(permissions+"test");
 	}
 ```
-##参考文档
+
+## 参考文档
 1.<a href="http://www.ztree.me/v3/main.php#_zTreeInfo" target="_blank">zTree -- jQuery 树插件</a><br> 
 2.<a href="http://negativo17.org/steam/" target="_blank">Moving the Steam client installation</a><br>
 3.<a href="http://askubuntu.com/questions/256628/steam-fatal-error-steam-needs-to-be-online-to-update-but-was-set-to-offline-mov" target="_blank">Steam fatal error steam needs to be online to update, but was set to offline movies</a><br>
