@@ -6,10 +6,11 @@ tags: Linux
 keywords: 
 description: 
 ---
-##Samba简介
+## Samba简介
 Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。通过设置“NetBIOS over TCP/IP”使得Samba不但能与局域网络主机分享资源，还能与全世界的电脑分享资源。  
 如果您工作的环境中既有微软的Windows又有Linux，那么，一个共享文件及目录的方式便是通过一个跨平台网络文件共享协议：SMB/CIFS。Windows原生的支持SMB/CIFS，Linux也通过开源的软件Samba实现了SMB/CIFS协议。
-##在Fedora和CentOS上安装Samba
+
+## 在Fedora和CentOS上安装Samba
 首先，检验Samba是否已经安装在您的系统中：
 
 ```
@@ -22,7 +23,8 @@ $ rpm -q samba samba-common samba-client
 $ sudo yum install samba samba-common samba-client 
 #在CentOS中yum安装可能出错，可以根据出错信息自行下载相应版本的Samba rpm安装包。
 ```
-##建立需要共享的文件夹
+
+## 建立需要共享的文件夹
 创建一个用于在网络中共享的本地文件夹。这个文件夹应该以Samba共享的方式导出到远程的用户。  
 共享文件夹可以创建在home目录下，也可以在根目录下。
 
@@ -56,7 +58,7 @@ virt_use_samba --> on
 $ sudo setsebool -P samba_enable_home_dirs 1  
 ```
 
-##为Samba配置SELinux
+## 为Samba配置SELinux
 接下来，我们需要再次配置SELinux。在Fedora和CentOS发行版中SELinux是默认开启的。SELinux仅在正确的安全配置下才允许Samba读取和修改文件或文件夹。（例如，加上'sambasharet'属性标签）。
 
 ```
@@ -70,7 +72,7 @@ $ sudo semanage fcontext -a -t samba_share_t "/shared(/.*)?"
 $ sudo restorecon -R -v /shared 
 ```
 
-##为Samba配置防火墙
+## 为Samba配置防火墙
 下面的命令用来打开防火墙中Samba共享所需的TCP/UDP端口。  
 如果您在使用firewalld（例如，在Fedora和CentOS7下），接下来的命令将会永久的修改Samba相关的防火墙规则。
 
@@ -94,7 +96,7 @@ $ sudo vi /etc/sysconfig/iptables
 
 ```
 
-##修改改Samba配置文件smb.conf
+## 修改改Samba配置文件smb.conf
 
 ```
 #文件编辑器打开Samba配置文件
@@ -116,7 +118,7 @@ writeable=yes
 ;	valid users = MYDOMAIN\%S
 ```
 
-##创建Samba用户帐户
+## 创建Samba用户帐户
 创建Samba用户帐户，这是挂载和导出Samba文件系统所必须的。我们可以使用smbpasswd工具来创建一个Samba用户。注意，Samba用户帐户必须是已有的Linux用户。如果您尝试使用smbpasswd添加一个不存在的用户，它会返回一个错误的消息。  
 如果您不想使用任何已存在的Linux用户作为Samba用户，您可以在您的系统中创建一个新的用户。为安全起见，设置新用户的登录脚本为/sbin/nologin，并且不创建该用户的home文件夹。
 
@@ -130,7 +132,7 @@ $ sudo passwd sambaguest
 $ sudo smbpasswd -a sambaguest
 ```
 
-##共享文件的权限问题
+## 共享文件的权限问题
 创建Samba用户帐户后，我们需要对之前创建的共享文件夹shared进行权限设置。
 
 ```
@@ -144,7 +146,7 @@ $ sudo chmod o+rwx shared/
 drwxrwxrwx.  2 root dev3  4096 11月  2 16:55 shared
 ```
 
-##启动Samba服务
+## 启动Samba服务
 激活Samba服务，并检测Samba服务是否在运行。
 
 ```
@@ -160,11 +162,11 @@ $ chkconfig smb on
 #检查开启情况
 $ chkconfig --list smb
 ```
-##访问 Samba
+## 访问 Samba
 在Fedora中可以 smb://<samba-server-IP-address> 连接共享文件夹  
 在windows中可以在‘运行’中输入 \\<samba-server-IP-address> 连接共享文件夹
 
-##碰到的问题
+## 碰到的问题
 1、访问samba服务器错误："您可能没有权限使用网络资源"的问题  
 可能是因为SELinux。SELinux(Security-Enhanced Linux) 是美国国家安全局（NSA）对于强制访问控制的实现，是 Linux&reg; 上最杰出的新安全子系统。  
 尝试解决办法：
@@ -177,7 +179,7 @@ $ setenforce 0
 $ setenforce 1
 ```
 
-##参考文档
+## 参考文档
 1.<a href="https://linux.cn/article-5547-1.html" target="_blank">如何在Fedora或CentOS上使用Samba共享文件夹</a><br> 
 2.<a href="http://www.cnblogs.com/ginoz/archive/2012/07/31/2616760.html" target="_blank">CentOS 6.2 安装 Samba</a><br>
 3.<a href="http://www.jeepshoe.org/808959594.htm" target="_blank">Fedora访问samba服务器错误："您可能没有权限使用网络资源"的问题</a><br>
