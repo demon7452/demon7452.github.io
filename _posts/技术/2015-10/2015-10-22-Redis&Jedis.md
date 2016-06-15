@@ -6,8 +6,9 @@ tags:
 keywords: 
 description: 
 ---
-##Redis服务器搭建
-###安装
+## Redis服务器搭建
+
+### 安装
 
 在命令行执行下面的命令：
 
@@ -26,9 +27,10 @@ $ make
 <font color=red>redis-benchmark：</font>性能基准测试工具，安装完后可以测试一下当前Redis的性能   
 <font color=red>redis-sentinel：</font>Redis监控工具，集群管理工具
 
-###配置文件
+### 配置文件
 Redis的配置文件是：redis.conf 
-###常用配置项为: 
+
+### 常用配置项为: 
 <font color=red>daemonize:</font> 是否以后台进程运行，默认为no </br>
 <font color=red>pidfile /var/run/redis.pid: </font>pid文件路径 </br>
 <font color=red>port 6379:</font> 监听端口 </br>
@@ -50,11 +52,13 @@ Redis的配置文件是：redis.conf
 <font color=red>dir ./：</font>本地数据库存放路径，默认是./ </br>
 <font color=red>slaveof <masterip> <masterport>：</font>当本机为从服务时，设置主服务的ip以及端口 </br>
 <font color=red>masterauth <master-password>：</font>主服务的连接密码</br>
-###启动服务器
+
+### 启动服务器
 ```
 $ src/redis-server
 ```
-###启动客户端
+
+### 启动客户端
 ```
 $ src/redis-cli
 redis> set foo bar
@@ -62,7 +66,8 @@ OK
 redis> get foo
 "bar"
 ```
-###README,官方说明文档
+
+### README,官方说明文档
 ```
 /**
 Where to find complete Redis documentation?
@@ -280,7 +285,8 @@ information.
 Enjoy!
 */
 ```
-###资料链接
+
+### 资料链接
 1.<a href="http://redis.io/download" target="_blank">[Redis]</a></br> 
 2.<a href="http://my.oschina.net/gccr/blog/307725" target="_blank">[Redis服务器搭建/配置/及Jedis客户端的使用方法]</a>
 
