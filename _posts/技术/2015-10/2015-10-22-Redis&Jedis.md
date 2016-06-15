@@ -38,10 +38,10 @@ Redis的配置文件是：redis.conf
 
 ### 常用配置项为: 
 **daemonize:** 是否以后台进程运行，默认为no <br>
-<font color=red>pidfile /var/run/redis.pid: </font>pid文件路径 </br>
-<font color=red>port 6379:</font> 监听端口 </br>
-<font color=red>bind 127.0.0.1:</font>绑定主机ip</br> 
-<font color=red>unixsocket /tmp/redis.sock：</font>sock文件路径 </br>
+**pidfile /var/run/redis.pid: **pid文件路径 </br>
+**port 6379:** 监听端口 </br>
+**bind 127.0.0.1:**绑定主机ip</br> 
+**unixsocket /tmp/redis.sock：**sock文件路径 </br>
 <font color=red>timeout 300：</font>超时时间，默认是300s </br>
 <font color=red>loglevel verbose：</font>日志等级，可选项有debug:大量的信息，开发和测试有用；verbose：很多极其有用的信息，但是不像debug那么乱；notice：在生产环境中你想用的信息；warning：最关键、最重要的信息才打印。 默认是erbose </br>
 <font color=red>logfile stdout：</font>日志记录方式，默认是stdout </br>
