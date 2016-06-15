@@ -20,11 +20,17 @@ $ make
 ```
 
 编译完成后,src文件夹中会包括以下的一些可执行文件：  
-<font color=red>redis-server：</font>这个是redis的服务器   
+
+<font color=red>redis-server：</font>这个是redis的服务器 
+
 <font color=red>redis-cli：</font>这个是redis的客户端   
-<font color=red>redis-check-aof：</font>这个是检查AOF文件的工具   
-<font color=red>redis-check-dump：</font>这个是本地数据检查工具   
+
+<font color=red>redis-check-aof：</font>这个是检查AOF文件的工具  
+
+<font color=red>redis-check-dump：</font>这个是本地数据检查工具 
+
 <font color=red>redis-benchmark：</font>性能基准测试工具，安装完后可以测试一下当前Redis的性能   
+
 <font color=red>redis-sentinel：</font>Redis监控工具，集群管理工具
 
 ### 配置文件
