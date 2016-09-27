@@ -29,6 +29,7 @@ description: Work And Holiday Visa
 
 #### 二、澳大利亚
  *[详情参阅：澳大利亚驻华大使馆](http://china.embassy.gov.au/bjngchinese/WorkandHolidaysc462FAQcn.html)*
+ 
  - 有多少中国年轻人可以申请打工与度假签证?
    - 每年提供给中国申请人5000个名额。如果当年名额已满，澳大利亚将于第二年再接受新申请。
   
