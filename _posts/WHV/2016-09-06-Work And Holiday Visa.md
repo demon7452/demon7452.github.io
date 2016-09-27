@@ -22,5 +22,6 @@ description: Work And Holiday Visa
 ###国家
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**目前对中国大陆开放打工度假签证只有新西兰和澳大利亚**
 ####一、新西兰
+
 ####二、澳大利亚
- 
+ *[详情参阅：澳大利亚驻华大使馆](http://china.embassy.gov.au/bjngchinese/WorkandHolidaysc462FAQcn.html)*
