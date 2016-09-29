@@ -43,6 +43,8 @@ description: Work And Holiday Visa
   - 之前没有获得过打工度假签证
   - 不能从事固定工作（除非在当地申请获得普通工作许可）；不能为用一个雇主工作三个月以上；在整个旅程期间，可以申请一个或多个培训、学习课程，但总时间不能超过六个月。
 
+![](http://imgsrca.nzinfo.cn/images/upload/20160612/1465702813979314.png_gz)
+
 #### 二、澳大利亚
  *[详情参阅：澳大利亚驻华大使馆](http://china.embassy.gov.au/bjngchinese/WorkandHolidaysc462FAQcn.html)*
  
