@@ -13,7 +13,7 @@ description: Work And Holiday Visa
 
 它允许年轻人在外国去体验生活，同时不需要通常的提前寻找工作赞助或者参与昂贵的大学交换生计划。
 
-### 限制
+## 限制
 这种签证通常有如下几点限制：
 
 - 大多数是倾向于提供给年轻的旅行者，因此有年龄上的限制（一般是介于18岁–30岁）
@@ -22,10 +22,10 @@ description: Work And Holiday Visa
 - 为保护本国人士的就业权益，会采取名额限制。
 
 
-### 国家
+## 国家
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**目前对中国大陆开放打工度假签证只有新西兰和澳大利亚**
 
-#### 一、新西兰
+### 一、新西兰
 *[详情参阅：新西兰驻华大使馆](https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/china-working-holiday-visa)*
 
 ![](http://imgsrca.nzinfo.cn/images/upload/20160920/1474341876384612_gz)
@@ -47,7 +47,7 @@ description: Work And Holiday Visa
 
 ![](http://imgsrca.nzinfo.cn/images/upload/20160612/1465702813979314.png_gz)
 
-#### 二、澳大利亚
+### 二、澳大利亚
  *[详情参阅：澳大利亚驻华大使馆](http://china.embassy.gov.au/bjngchinese/WorkandHolidaysc462FAQcn.html)*
  
  - 有多少中国年轻人可以申请打工与度假签证?
