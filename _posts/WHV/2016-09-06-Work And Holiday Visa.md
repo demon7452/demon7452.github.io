@@ -50,6 +50,8 @@ description: Work And Holiday Visa
 ### 二、澳大利亚
  *[详情参阅：澳大利亚驻华大使馆](http://china.embassy.gov.au/bjngchinese/WorkandHolidaysc462FAQcn.html)*
  
+ ![](http://cdn.pcwallart.com/images/australia-wallpaper-2.jpg)
+ 
  - 有多少中国年轻人可以申请打工与度假签证?
    - 每年提供给中国申请人5000个名额。如果当年名额已满，澳大利亚将于第二年再接受新申请。
   
@@ -69,3 +71,5 @@ description: Work And Holiday Visa
   - 具备基本应用英文水平 (相当于雅思成绩4.5或以上)；
   - 满足品行和健康要求；
   - 是真诚赴澳的访客。
+
+![](http://3.bp.blogspot.com/-Ka21wKoltz4/UQfQkV4_Z5I/AAAAAAAAC0o/x1vTHkb_thA/s1600/Sydney+Opera+House+at+night.jpg)
