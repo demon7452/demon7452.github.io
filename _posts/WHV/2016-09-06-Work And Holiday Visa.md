@@ -28,6 +28,8 @@ description: Work And Holiday Visa
 #### 一、新西兰
 *[详情参阅：新西兰驻华大使馆](https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/china-working-holiday-visa)*
 
+![](http://imgsrca.nzinfo.cn/images/upload/20160920/1474341876384612_gz)
+
 - 申请签证有哪些资格要求？
   - 为中国公民，且在递交申请时常住中国（申请时离开中国时间不能超过两年）
   - 所持中国护照有效期至少超过你预计（完成WHV后）离开新西兰的时间三个月
