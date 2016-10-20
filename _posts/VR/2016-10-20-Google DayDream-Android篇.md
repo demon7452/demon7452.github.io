@@ -17,6 +17,7 @@ The Google VR SDK for Android supports both Daydream and Cardboard, including a 
 The Google VR NDK for Android provides a C/C++ API for developers writing native code.
 
 Developers familiar with OpenGL can quickly start creating VR applications using the Google VR SDK, simplifying common VR development tasks such as:
+
 	- Lens distortion correction.
 	- Spatial audio.
 	- Head tracking.
@@ -27,6 +28,7 @@ Developers familiar with OpenGL can quickly start creating VR applications using
 	
 We're keeping the hardware and software open to encourage community participation and compatibility with VR content available elsewhere.
 To learn more:
-	- Use our Get Started guide for the Android SDK and NDK.
-	- Download the Google VR SDK for Android.
-	- To explore the Google VR API, see the Android API Reference.
+
+	- Use our Get Started guide for the Android **<a href="https://developers.google.com/vr/android/get-started" target="_blank">SDK</a>** and **<a href="https://developers.google.com/vr/android/ndk/get-started" target="_blank">NDK</a>**.
+	- Download the **<a href="https://developers.google.com/vr/android/download" target="_blank">Google VR SDK for Android</a>**.
+	- To explore the Google VR API, see the **<a href="https://developers.google.com/vr/android/reference_overview" target="_blank">Android API Reference</a>**.
