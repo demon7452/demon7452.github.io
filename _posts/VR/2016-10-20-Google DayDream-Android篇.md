@@ -34,7 +34,7 @@ To learn more:
 - To explore the Google VR API, see the **<a href="https://developers.google.com/vr/android/reference_overview" target="_blank">Android API Reference</a>**.
 
 
-## Getting Started for Android SDK
+## 二、Getting Started for Android SDK
 
 This document describes how to get started using the Google VR for Android SDK by building and running one of our sample apps on your Android device.
 
@@ -84,11 +84,26 @@ For more information about the code behind the Treasure Hunt game, see our [expl
 
 
 
-#### Start your own project
-
+### Start your own project
 
 ---
 
+#### Using Android Studio
 
+After you've read up on the Google VR SDK for Android, it'll be time to create your own applications. Here's how.
 
+1.First, grab all the required .AAR files from the **libraries** folder of the sdk. To determine which .AARs you need to depend on, you can examine the **build.gradle** files of the various sample apps. For example, **samples/treasurehunt/build.gradle**'s dependency section has the following entries:
 
+```
+dependencies {
+  compile project(':libraries-audio')
+  compile project(':libraries-base')
+  compile project(':libraries-common')
+
+  compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+}
+```
+
+This indicates that an application similar to the Treasure Hunt sample needs the **audio**, **base**, and **common** libraries.
+
+2.Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via **File -> New -> New Module**. Select **Import .JAR/.AAR Package**. Locate one of the .AARs and import it.
