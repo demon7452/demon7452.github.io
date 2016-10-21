@@ -133,3 +133,21 @@ repositories{
 ```
 
 This will tell Gradle to look in the **libs** subdirectory of your module for the three .AARs. Create that **libs** subdirectory inside your module's directory and copy the .AARs there. You will need to repeat this for every module that uses those .AARs which will lead to many duplicate .AARs as your project becomes more complex.
+
+#### Using ProGuard with Google VR
+
+If you are using [ProGuard](http://d.android.com/studio/build/shrink-code.html) with your project, make sure it keeps the code used by Google VR. We do this in our code samples **build.gradle** file with the following:
+
+```
+android {
+    ...
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles.add(file('../../proguard-gvr.txt'))
+        }
+    }
+}
+```
+
+where [proguard-gvr.txt](https://github.com/googlevr/gvr-android-sdk/blob/master/proguard-gvr.txt) contains the ProGuard rules you need.
