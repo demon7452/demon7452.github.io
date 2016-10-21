@@ -8,7 +8,7 @@ description: Google DayDream Documentation For Android
 ---
 # Google DayDream-Android篇
 
-### *<a href="https://developers.google.com/vr/android/" target="_blank">官方文档</a>*
+#### *<a href="https://developers.google.com/vr/android/" target="_blank">官方文档</a>*
 
 ## 一、Google VR SDK for Android
 
@@ -32,3 +32,4 @@ To learn more:
 - Use our Get Started guide for the Android **<a href="https://developers.google.com/vr/android/get-started" target="_blank">SDK</a>** and **<a href="https://developers.google.com/vr/android/ndk/get-started" target="_blank">NDK</a>**.
 - Download the **<a href="https://developers.google.com/vr/android/download" target="_blank">Google VR SDK for Android</a>**.
 - To explore the Google VR API, see the **<a href="https://developers.google.com/vr/android/reference_overview" target="_blank">Android API Reference</a>**.
+
