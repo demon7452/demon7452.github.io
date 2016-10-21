@@ -41,7 +41,7 @@ To learn more:
 This document describes how to get started using the Google VR for Android SDK by building and running one of our sample apps on your Android device.  
 这篇文档描述了如何在你的Android设备上构建和运行示例应用，以此让你学会如何使用安卓版Google VR SDK。
 
-### Treasure Hunt(寻宝) sample app
+### 01-Treasure Hunt(寻宝) sample app
 
 ---
 
@@ -56,7 +56,7 @@ You will build the Treasure Hunt app, which uses the following features of the G
 In this game, you'll look around the game world to find and collect objects as quickly as possible. It's a basic game, but it demonstrates the core features of the Google VR SDK.  
 在这个游戏中，你将环顾游戏世界，并且尽快地去找到和收集游戏对象。这是一个相当基础的游戏，但它演示了谷歌VR SDK的核心功能。
 
-### Open and run Treasure Hunt
+### 02-Open and run Treasure Hunt
 
 ---
 
@@ -89,7 +89,7 @@ For more information about the code behind the Treasure Hunt game, see our [expl
 
 
 
-### Start your own project
+### 03-Start your own project
 
 ---
 
