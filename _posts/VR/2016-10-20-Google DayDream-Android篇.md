@@ -8,7 +8,7 @@ description: Google DayDream Documentation For Android
 ---
 # Google DayDream-Android篇
 
-*<a href="https://developers.google.com/vr/android/" target="_blank">官方文档</a>*
+### *<a href="https://developers.google.com/vr/android/" target="_blank">官方文档</a>*
 
 ## 一、Google VR SDK for Android
 
@@ -18,13 +18,13 @@ The Google VR NDK for Android provides a C/C++ API for developers writing native
 
 Developers familiar with OpenGL can quickly start creating VR applications using the Google VR SDK, simplifying common VR development tasks such as:
 
-	- Lens distortion correction.
-	- Spatial audio.
-	- Head tracking.
-	- 3D calibration.
-	- Side-by-side rendering.
-	- Stereo geometry configuration.
-	- User input event handling.
+- Lens distortion correction.
+- Spatial audio.
+- Head tracking.
+- 3D calibration.
+- Side-by-side rendering.
+- Stereo geometry configuration.
+- User input event handling.
 	
 We're keeping the hardware and software open to encourage community participation and compatibility with VR content available elsewhere.
 To learn more:
