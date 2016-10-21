@@ -29,6 +29,6 @@ Developers familiar with OpenGL can quickly start creating VR applications using
 We're keeping the hardware and software open to encourage community participation and compatibility with VR content available elsewhere.
 To learn more:
 
-	- Use our Get Started guide for the Android **<a href="https://developers.google.com/vr/android/get-started" target="_blank">SDK</a>** and **<a href="https://developers.google.com/vr/android/ndk/get-started" target="_blank">NDK</a>**.
-	- Download the **<a href="https://developers.google.com/vr/android/download" target="_blank">Google VR SDK for Android</a>**.
-	- To explore the Google VR API, see the **<a href="https://developers.google.com/vr/android/reference_overview" target="_blank">Android API Reference</a>**.
+- Use our Get Started guide for the Android **<a href="https://developers.google.com/vr/android/get-started" target="_blank">SDK</a>** and **<a href="https://developers.google.com/vr/android/ndk/get-started" target="_blank">NDK</a>**.
+- Download the **<a href="https://developers.google.com/vr/android/download" target="_blank">Google VR SDK for Android</a>**.
+- To explore the Google VR API, see the **<a href="https://developers.google.com/vr/android/reference_overview" target="_blank">Android API Reference</a>**.
