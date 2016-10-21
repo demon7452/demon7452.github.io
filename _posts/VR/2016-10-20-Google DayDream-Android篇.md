@@ -12,12 +12,13 @@ description: Google DayDream Documentation For Android
 
 ## 一、Google VR SDK for Android
 
-The Google VR SDK for Android supports both Daydream and Cardboard, including a simple API used for creating apps inserted into Cardboard viewers, and the more complex API for supporting Daydream-ready phones and the Daydream controller.
-安卓版Google VR SDK同时支持Daydream和Cardboard设备，它包含一个简单API可以用来创建适配Cardboard的应用，同时它含一个复杂的API用来创建适配Daydream手机设备、控制器的应用。
-The Google VR NDK for Android provides a C/C++ API for developers writing native code.
-安卓版Google VR NDK提供了C/C++ API，可以让开发者编写本地代码。
-Developers familiar with OpenGL can quickly start creating VR applications using the Google VR SDK, simplifying common VR development tasks such as:
+The Google VR SDK for Android supports both Daydream and Cardboard, including a simple API used for creating apps inserted into Cardboard viewers, and the more complex API for supporting Daydream-ready phones and the Daydream controller.  
+安卓版Google VR SDK同时支持Daydream和Cardboard设备，它包含一个简单API可以用来创建适配Cardboard的应用，同时它含一个复杂的API用来创建适配Daydream手机设备、控制器的应用。  
+The Google VR NDK for Android provides a C/C++ API for developers writing native code.  
+安卓版Google VR NDK提供了C/C++ API，可以让开发者编写本地代码。  
+Developers familiar with OpenGL can quickly start creating VR applications using the Google VR SDK, simplifying common VR development tasks such as:  
 熟悉OpenGL的开发者可以很快学会开发VR应用，可以简化了常见的VR开发任务，例如：
+
 - Lens distortion correction.镜头失真校正。
 - Spatial audio.空间音频。
 - Head tracking.头部跟踪。
@@ -26,8 +27,8 @@ Developers familiar with OpenGL can quickly start creating VR applications using
 - Stereo geometry configuration.立体几何配置。
 - User input event handling.用户输入事件处理。
 	
-We're keeping the hardware and software open to encourage community participation and compatibility with VR content available elsewhere.
-我们坚持让硬件和软件开源，鼓励开发者参与社区交流，使VR内容可以随处可见。(我猜的-_-!!)
+We're keeping the hardware and software open to encourage community participation and compatibility with VR content available elsewhere.  
+我们坚持让硬件和软件开源，鼓励开发者参与社区交流，使VR内容可以随处可见。(我猜的-_-!!)  
 To learn more:
 
 - Use our Get Started guide for the Android **<a href="https://developers.google.com/vr/android/get-started" target="_blank">SDK</a>** and **<a href="https://developers.google.com/vr/android/ndk/get-started" target="_blank">NDK</a>**.
@@ -37,13 +38,14 @@ To learn more:
 
 ## 二、Getting Started for Android SDK
 
-This document describes how to get started using the Google VR for Android SDK by building and running one of our sample apps on your Android device.
+This document describes how to get started using the Google VR for Android SDK by building and running one of our sample apps on your Android device.  
 这篇文档描述了如何在你的Android设备上构建和运行示例应用，以此让你学会如何使用安卓版Google VR SDK。
+
 ### Treasure Hunt(寻宝) sample app
 
 ---
 
-You will build the Treasure Hunt app, which uses the following features of the Google VR SDK:
+You will build the Treasure Hunt app, which uses the following features of the Google VR SDK:  
 你将构建一个“寻宝”应用，它运用了Google VR SDK的如下特点：
 
 - **Binocular rendering:** A split-screen(分屏) view for each eye in VR.双目渲染
@@ -51,7 +53,7 @@ You will build the Treasure Hunt app, which uses the following features of the G
 - **Head movement tracking:** The VR world view updates as the user moves their head.头部运动跟踪
 - **Trigger input:** The user can interact(相互作用) with the VR world by pressing a button.触发输入
 
-In this game, you'll look around the game world to find and collect objects as quickly as possible. It's a basic game, but it demonstrates the core features of the Google VR SDK.
+In this game, you'll look around the game world to find and collect objects as quickly as possible. It's a basic game, but it demonstrates the core features of the Google VR SDK.  
 在这个游戏中，你将环顾游戏世界，并且尽快地去找到和收集游戏对象。这是一个相当基础的游戏，但它演示了谷歌VR SDK的核心功能。
 
 ### Open and run Treasure Hunt
@@ -77,7 +79,7 @@ git clone https://github.com/googlevr/gvr-android-sdk.git
 
 #### Build the sample app
 
-1.Open Android Studio. On the **Welcome to Android Studio** screen, choose **Open an existing Android Studio** project, and select the *android-sdk* directory. Android Studio will display the various gradle modules on the **Project** tab on the left side and the various run targets on the top toolbar.
+1.Open Android Studio. On the **Welcome to Android Studio** screen, choose **Open an existing Android Studio** project, and select the *android-sdk* directory. Android Studio will display the various gradle modules on the **Project** tab on the left side and the various run targets on the top toolbar.  
 (ps:请注意项目是否构建成功，构建失败的话将无法看到图中的效果。)
 ![](https://developers.google.com/vr/images/android/android-studio.png)
 
