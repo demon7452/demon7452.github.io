@@ -107,3 +107,29 @@ dependencies {
 This indicates that an application similar to the Treasure Hunt sample needs the **audio**, **base**, and **common** libraries.
 
 2.Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via **File -> New -> New Module**. Select **Import .JAR/.AAR Package**. Locate one of the .AARs and import it.
+
+3.Then add this new module as a dependency to your main app via **File > Project Structure > Modules (on the left side's section list) > YOUR APP's MODULE NAME > Dependencies (on the right side's tab list) -> '+' -> Module Dependency**.
+
+Once this is done for all of the required libraries, you will be able to reference code in the Google VR SDK in your app.
+
+#### Directly using Gradle
+
+Using the steps above will cause Android Studio to generate new modules and edit your .gradle files automatically. Alternatively, you can directly include the .AARs in your application's module by editing that specific module's **build.gradle** file and adding the following entries:
+
+```
+dependencies {
+  compile(name:'audio', ext:'aar')
+  compile(name:'common', ext:'aar')
+  compile(name:'base', ext:'aar')
+
+  compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+}
+
+repositories{
+  flatDir{
+    dirs 'libs'
+  }
+}
+```
+
+This will tell Gradle to look in the **libs** subdirectory of your module for the three .AARs. Create that **libs** subdirectory inside your module's directory and copy the .AARs there. You will need to repeat this for every module that uses those .AARs which will lead to many duplicate .AARs as your project becomes more complex.
