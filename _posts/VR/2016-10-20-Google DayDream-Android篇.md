@@ -95,9 +95,12 @@ For more information about the code behind the Treasure Hunt game, see our [expl
 
 #### Using Android Studio
 
-After you've read up on the Google VR SDK for Android, it'll be time to create your own applications. Here's how.
+After you've read up on the Google VR SDK for Android, it'll be time to create your own applications. Here's how.  
+当你阅读完以上的内容后，是时候开始创建你自己的应用了。  
 
-1.First, grab all the required .AAR files from the **libraries** folder of the sdk. To determine which .AARs you need to depend on, you can examine the **build.gradle** files of the various sample apps. For example, **samples/treasurehunt/build.gradle**'s dependency section has the following entries:
+1.First, grab all the required .AAR files from the **libraries** folder of the sdk. To determine which .AARs you need to depend on, you can examine the **build.gradle** files of the various sample apps. For example, **samples/treasurehunt/build.gradle**'s dependency section has the following entries(条目):  
+首先从**libraries**文件夹中抓取所有你需要的.AAR文件，判断哪些.AARs文件是你需要依赖的。作为参考，你可以检查不同实例应用目录下的**build.gradle**文件。例如，**samples/treasurehunt/build.gradle**项目文件中依赖了如下的条目：  
+
 
 ```
 dependencies {
