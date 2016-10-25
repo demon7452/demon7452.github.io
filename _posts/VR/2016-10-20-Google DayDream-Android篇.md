@@ -81,7 +81,7 @@ git clone https://github.com/googlevr/gvr-android-sdk.git
 
 1.Open Android Studio. On the **Welcome to Android Studio** screen, choose **Open an existing Android Studio** project, and select the *android-sdk* directory. Android Studio will display the various gradle modules on the **Project** tab on the left side and the various run targets on the top toolbar.  
 (ps:请注意项目是否构建成功，构建失败的话将无法看到图中的效果。)
-![](https://developers.google.com/vr/images/android/android-studio.png)
+![](http://o835t7sp4.bkt.clouddn.com/image/blog/vr/android-studio.png)
 
 2.Connect your phone to your machine, select the **samples-treasurehunt** target and click **Run** to compile and run the application on your phone.
 
