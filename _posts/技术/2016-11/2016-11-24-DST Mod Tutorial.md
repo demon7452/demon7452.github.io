@@ -25,12 +25,29 @@ And that's it!  Now next time you restart the game, you should see your mod list
 
 ## Creature Mod Tutorial 2 - "Spawning a Creature"
 
-In this tutorial we're going to learn how to spawn an in game creature at the player's position.  We're doing this so that later on in future tutorials when we're creating our own creatures, we can easily test them in game.  Let's get started!
+In this tutorial we're going to learn how to spawn(大量生产) an in game creature at the player's position.  We're doing this so that later on in future tutorials when we're creating our own creatures, we can easily test them in game.  Let's get started!
 
 -  **Step 1 - Writing a spawn function.**  
 	We need to write ourselves a function which will spawn our creature.  I've chosen to spawn a 'Beefalo' but feel free to pick your own creature.  To see how this is done, check out the function 'SpawnCreature' found in 'modmain.lua'.
+    
+    ```
+    --[NEW] This function spawns a 'Beefalo' at the player's position.  The player parameter is a reference to the player in game.
+function SpawnCreature(player)
+	
+	--[NEW] Get the player's current position.
+	local x, y, z = player.Transform:GetWorldPosition()
 
-- **Step 2 - Triggering our function.**  
+	--[NEW] Spawn a 'Beefalo' prefab at the world origin.  Prefabs are basically a fancy game development term for objects.  Every 
+	--		creature, item and character in 'Don't Starve' is a prefab.
+	local creature = GLOBAL.SpawnPrefab("forest/animals/beefalo")
+
+	--[NEW] Move the creature to the player's position.
+	creature.Transform:SetPosition( x, y, z )	
+end
+
+    ```
+
+- **Step 2 - Triggering(起动，触发) our function.**  
 	Writing our spawn function isn't enough.  We need some way of telling the game to run our function.  Luckily for us, 'Don't Starve' let's us do that by calling 'AddSimPostInit'.  This function tells the game to run our function once the game has started and the player has spawned in the world.  By adding this call at the end of modmain.lua, we're telling the game to call 'SpawnCreature' once we've entered the game.
 
 And that's it!  By enabling your mod in the main menu, you should now have a shiny new 'Beefalo' spawn right on top of you any time you jump into the game!
