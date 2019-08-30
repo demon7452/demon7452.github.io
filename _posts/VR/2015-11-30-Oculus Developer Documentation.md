@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Oculus Developer Documentation 中英对照
-category: VR
-tags: VR
+category: vr
+tags: vr
 keywords: 
 description: 
 ---

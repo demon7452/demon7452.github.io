@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Work And Holiday Visa
-category: WHV
-tags: WHV
+category: whv
+tags: whv
 keywords: Work And Holiday Visa
 description: Work And Holiday Visa
 ---
