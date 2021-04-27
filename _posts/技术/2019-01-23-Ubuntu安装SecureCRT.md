@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu安装SecureCRT
 category: 技术
-tags: linux
+tags: Linux
 keywords: linux SecureCRT
 description:
 ---
