@@ -89,7 +89,7 @@ active: 技术
 
 # 首页除了最新文章外显示分类
 cates: 
-  - ACG
+  - Interview
   - vr
 
 # 中文本地化

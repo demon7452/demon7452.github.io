@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Google DayDream-Android篇
-category: vr
-tags: vr
+category: VR
+tags: Virtual Reality
 keywords: Google DayDream Android 
 description: Google DayDream Documentation For Android
 ---
