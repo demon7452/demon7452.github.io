@@ -11,6 +11,6 @@ books:
       publisher: OREILLY
       language: 中英文
       link: 
-      cover: http://o835t7sp4.bkt.clouddn.com/image/bookCovers/DesignPatterns.jpg
+      cover: /public/img/BookCovers/HeadFirstDesignPatterns.jpg
       description: 个人觉得比较适合作为设计模式学习的入门书籍。
 ---

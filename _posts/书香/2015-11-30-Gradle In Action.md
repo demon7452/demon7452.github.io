@@ -11,6 +11,6 @@ books:
       publisher: Manning Publications
       language: 中文
       link: http://lippiouyang.gitbooks.io/gradle-in-action-cn/content/
-      cover: http://img3.douban.com/lpic/s26672054.jpg
+      cover: /public/img/BookCovers/GradleInAction.png
       description: Gradle In Action中文版是由ouyanglip在GitHub上创建的一个项目，由众人共同翻译校验完成。<a href="https://github.com/LippiOuYang/GradleInActionZh" target="_blank">[Github托管地址]</a>
 ---
