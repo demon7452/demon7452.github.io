@@ -8,9 +8,9 @@ books:
     - title: 我的第一本算法书
       status: 在读
       author: 石田保辉 宫崎修一著
-      publisher: 浙江人民出版社
+      publisher: 人民邮电出版社
       language: 中文
-      link: 
+      link: /public/books/我的第一本算法书.pdf
       cover: /public/img/BookCovers/HowToCreateAMind.jpg
       description: 个人认为很适合入门的一本算法书，通俗易懂，能看的下去。
 ---
