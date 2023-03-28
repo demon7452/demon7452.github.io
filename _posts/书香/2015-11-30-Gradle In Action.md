@@ -6,7 +6,7 @@ tags:
 keywords: 
 books: 
     - title: Gradle in Action
-      status: 在读
+      status: 已读
       author: Benjamin Muschko 翻译：ouyanglip等 
       publisher: Manning Publications
       language: 中文

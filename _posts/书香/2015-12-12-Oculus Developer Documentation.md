@@ -6,7 +6,7 @@ tags:
 keywords: 
 books: 
     - title: Oculus Developer Documentation
-      status: 在读
+      status: 已读
       author: Oculus官方 译者：XiongLi
       publisher: None
       language: English-中文
