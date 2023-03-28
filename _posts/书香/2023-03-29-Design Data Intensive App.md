@@ -10,7 +10,7 @@ books:
       author: Martin Kleppmann 著
       publisher: *****
       language: 中文
-      link: http://demon7452.github.io/public/books/设计数据密集型应用.pdf
-      cover: /public/img/BookCovers/DesignDataIntensiveApp.JPG
+      link: http://demon7452.github.io/public/books/DesignDataIntensiveApp.pdf
+      cover: /public/img/BookCovers/DesignDataIntensiveApp.jpg
       description: 系统设计学习书籍。
 ---
