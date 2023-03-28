@@ -11,6 +11,6 @@ books:
       publisher: **************
       language: 中文
       link: http://demon7452.github.io/public/books/DesignDataIntensiveApp.pdf
-      cover: /public/img/BookCovers/DesignDataIntensiveApp.jpeg
-      description: 又一部力作，拜读中！
+      cover: https://demon7452.github.io/public/img/BookCovers/DesignDataIntensiveApp.jpeg
+      description: 系统设计学习！
 ---
